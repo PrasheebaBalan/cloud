@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Railways Booking Form</title>
+    <style>
+        body {
+            background-image: url('railway_background.jpg');
+            background-size: cover;
+            padding: 20px;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        form {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Railways Booking Form</h1>
+    <form action="/submit" method="post">
+        <label for="train_number">Train Number:</label><br>
+        <input type="text" id="train_number" name="train_number"><br>
+        
+        <label for="train_name">Train Name:</label><br>
+        <input type="text" id="train_name" name="train_name"><br>
+        
+        <label for="departure">Departure:</label><br>
+        <input type="text" id="departure" name="departure"><br>
+        
+        <label for="arrival">Arrival:</label><br>
+        <input type="text" id="arrival" name="arrival"><br>
+        
+        <label for="departure_time">Departure Time:</label><br>
+        <input type="text" id="departure_time" name="departure_time"><br>
+        
+        <label for="arrival_time">Arrival Time:</label><br>
+        <input type="text" id="arrival_time" name="arrival_time"><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
